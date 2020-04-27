@@ -1,24 +1,5 @@
 # Axway AMPLIFY API Management on Azure
 
-API management is the process of building secure APIs, publishing them for reusability, and deploying them in a scalable environment. **AMPLIFY API Management** lets you create APIs from cloud and on-premise services, publish them to a marketplace, and enable self-service consumption while controlling access and use. Embedded analytics provides the right measuring tools to ensure your digital success and the API gateway sits in front of APIs acting as a protector, enforcing security and ensuring scalability and high availability.
-
-This deployment contains **all assets to create a first generic deployment inside your Azure subscription**. It uses only PaaS Azure services and **CNCF technologies** and the most important **Azure Kubernetes Services**.
-
-After the deployment, you will be able to set your specific context by adapting ARM templates and helmchart for custom deployment. Keep in mind that this architecture is a Demo and couldn't be used in production. Please read recommendation and best-practice on the [container documentation](https://github.com/Axway/axway-open-docs/blob/master/content/en/docs/apim_installation/apigw_containers/container_intro.md).
-
-Techlabs are available on github [here](https://github.com/Axway/Cloud-Automation/APIM/Techlabs).
-
-Deployment is done in three main steps.
-![Deployment](./imgs/deployment.jpg)
-1. Prerequisite and deployment only by ARM template. Last action is to start the customs script extension object to execute bash script.
-2. The bash script used to configure the VM and all Azure services and deploy additionnal components as Nginx or certbot manager for certificates.This step creates all AMPLIFY APIM component docker images.
-3. Action to deploy AMPLIFY API Management on Azure Kubernetes.
-
-## Architecture
-Here is the architecture deployed with this script.More deployment option will be available soon (see Limitation section).
-![Architecture](./imgs/architecture-demo.jpg)
-
-Please read the Azure reference architecture for more informations. *TODO : Add link to this document*
 
 ## Dependencies
 This ressource is available only for version **7.6.2-SP4** and **7.7-SP1** available on Axway website. Also new APIM version will be tested in time.
