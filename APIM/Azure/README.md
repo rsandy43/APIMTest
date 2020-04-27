@@ -61,38 +61,3 @@ Two opportunities to deploy the solution.
     <img src="https://azuredeploy.net/deploybutton.png"/>
 </a>
 
-### Powershell scripts : Developer mode
-This method is usefull to pimp ARM template and bash script for your case.
-1. Clone this repository on your device.
-2. Set variables in GetAppConfig.ps1 with your prefered text editor.
-3. Open a Windows Powershell
-4. Connect to Azure with Connect-AzAccount cmdlet.
-5. Execute DeployAxwayAPIMTemplate.ps1
-
-This script enable Debug and you can see all
-
-## Limitations
-This quickstart doesn't deploy Axway components (for the moment):
-* Oauth component
-* API Gateway Analytics
-* Embedded Analytics
-* API Builder
-* Backend examples (share your needs)
-
-Password for Mysql database are set automatically. It's possible to view values inside Kubernetes secrets. 
-
-Optional components are missing : 
-* Cassandra cluster on VM
-* Azure monitoring with prometheus
-* Azure Application Gateway
-* Azure Database for Mysql
-
-## Contribute & Debug 
-All new capabilities will be usefull for the community. So don't hesitate to add optional component or configuration.
-
-The bash script is executed by a custom script extension in folder 
-*/var/lib/waagent/custom-script/download/0*
-You can find also some log files stdout and stderror.
-A **Webhook MS teams** could be configured to receive all logs and defined error.
-
-Join the Cloud & automation community on [Axway website](https://community.axway.com/s/group/0F92X000000CtYISA0/cloud-automation?t=1580717413613). And be sure to share your problem or idea.
