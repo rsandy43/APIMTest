@@ -33,7 +33,7 @@ After the deployment, the VM can be used to manage the cluster. Access in ssh is
 Two opportunities to deploy the solution.
 
 ### Azure Portal : Deploy without changes
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://github.com/rsandy43/APIMTest" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Frsandy43%2FAPIMTest%2Fmaster%2FAPIM%2FAzure%2Fazuredeploy.json" target="_blank">
     <img src="https://azuredeploy.net/deploybutton.png"/>
 </a>
 
