@@ -24,11 +24,6 @@ Then create a Blob storage account in the target region with 3 containers :
 
 ## Deployment
 Somes parameters change the deployment. Here is a resume:
-- *apimVersion*. It will be used to search package and name package. Value autorized 7.6.2 and 7.7
-- *projectName* and *environment* are used for naming.
-- *userAdmin* and *_adminPassword* set the user on the bastion VM.
-- *email* used for let's encrypt registration.
-- *sourceBlobStorageName* is the blob where stored assets.
 - *portal* set true to deploy API-Portal component.
 - *webhookUrl* Streams log on Microsoft Teams.
 - *servicePrincipalName*, *_servicePrincipalID*, *_servicePrincipalSecret* to the prefconfigured SP.
