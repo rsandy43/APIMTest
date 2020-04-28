@@ -43,7 +43,7 @@
         "RbacPermission": "[bool('true')]",
         "networkPlugin": "azure",
         "networkPolicy": "azure",
-        "aksSizingNodes": "Standard_DS3_v2",
+        "aksSizingNodes": "Standard_DS2_v2",
         "aksNumberNodes": 3
     },
     "resources": [
