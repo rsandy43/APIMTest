@@ -170,9 +170,9 @@
 
       "containerRegistryName": "[toLower(concat(parameters('projectName'),parameters('environment'), 'acr'))]",
 
-      "baseURL": "https://raw.githubusercontent.com/Axway/Cloud-Automation/master/APIM/Azure/",
-      "nestedTemplateURL": "[concat(variables('baseURL'),'armtemplates/nestedtemplates/')]",
-      "scriptURL": "[concat(variables('baseURL'),'armtemplates/scripts/')]",
+      "baseURL": "https://raw.githubusercontent.com/rsandy43/APIMTest/master/APIM/Azure/",
+      "nestedTemplateURL": "[concat(variables('baseURL'),'nestedtemplates/')]",
+      "scriptURL": "[concat(variables('baseURL'),'scripts/')]",
 
       "uriNetworkTemplate": "[uri(variables('nestedTemplateURL'), 'Network-Template.json')]",
       "uriAKSTemplate": "[uri(variables('nestedTemplateURL'), 'AKS-Template.json')]",
@@ -187,7 +187,7 @@
       "aksNodeNamePrefix": "[toLower(concat(parameters('projectName'),parameters('environment')))]",
       "aksClusterName": "[toLower(concat(parameters('projectName'),parameters('environment')))]",
       "aksDnsPrefix": "[toLower(concat(parameters('projectName'), '-dns'))]",
-      "aksVersion": "1.15.5",
+      "aksVersion": "1.15.10",
   
       "scriptFileName": "Deploy-APIM-v1.0.sh",
       "vmExtensionName": "[concat(variables('bastionVMName'),'-scriptextension')]",
